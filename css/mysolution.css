@@ -126,17 +126,14 @@
 
 @keyframes ese12{
     0%{
-        position: absolute;
         left:10%;
     }
 
     50%{
-        position: absolute;
         left:60%;
     }
 
     100%{
-        position: absolute;
         left:10%;
     }
 }
@@ -147,45 +144,40 @@
 
 @keyframes ese12-bt{
     0%{
-        position: absolute;
-        left:49%;
+        right:20%;
     }
 
     50%{
 
-        position: absolute;
-        left:10%;
+        right: 60%;
     }
 
     100%{
-        position: absolute;
-        left:49%;
+        right:20%;
     }
 }
 
 .ex-13-button:hover .ex-13-top-white{
-    animation: ese13 6s ease-in-out;
+    animation: ese13 3s ease-in-out;
 }
 
 @keyframes ese13{
     0%{
-        position: absolute;
         left:10%;
     }
 
-    25%{
-        position: absolute;
-        left:60%;
+    30%{
+        left: calc(100% - 60px);
     }
 
     50%{
-        left: 100%;
-        bottom:0%;
+        top: calc(0% + 60px);
     }
 
 
     100%{
-        position: absolute;
+        bottom: calc(100% - 60px);
         left:10%;
-    } 
+    }
+ 
 }
