@@ -1,0 +1,191 @@
+.ex-1-square{
+    transition: background-color 3s;
+}
+
+.ex-1-square:hover{
+    background-color: red;
+}
+
+.ex-2-square{
+    transition: width 3s ease-in-out;
+}
+
+.ex-2-square:active{
+    width: 100%;
+}
+
+.ex-3-square{
+    transition: border-radius 3s;
+}
+
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
+.ex-4-square{
+    animation: fade 3s ease-out 1s;
+}
+
+@keyframes fade{
+    100%{
+        background-color: transparent;
+    }
+}
+
+.ex-5-square{
+    transition: width 3s, height 3s;
+}
+
+.ex-5-square:hover{
+   width: 100px;
+   height: 100px;
+}
+
+.ex-5-square:active{
+   width: 30px;
+   height: 30px;
+}
+
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+
+.ex-7-img:hover{
+    animation: filter 5s ease-in-out;
+}
+
+@keyframes filter{
+    50%{
+        filter: invert(100%);
+    }
+    100%{
+        filter: grayscale(100%);
+    }
+}
+
+.ex-8-img:hover{
+    animation: ese8 5s ease-in-out;
+}
+
+@keyframes ese8{
+    50%{
+        filter: invert(100%);
+    }
+    100%{
+        filter: grayscale(100%);
+        border-radius: 20px;
+    }
+}
+
+.ex-9-img:hover{
+    animation: ese9 5s ease-in-out;
+}
+
+@keyframes ese9{
+    50%{
+        filter: invert(100%);
+    }
+    100%{
+        filter: grayscale(100%);
+        border-radius: 20px;
+        width: 300px;
+        height: auto;
+    }
+}
+
+.ex-10-icon{
+    animation: ese10 1s linear infinite;
+}
+
+@keyframes ese10{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.ex-11-icon:hover{
+    animation: ese11 1.5s linear;
+}
+
+@keyframes ese11{
+    80%{
+        transform: rotate(270deg);
+    }
+    20%{
+        transform: rotate(0deg);
+    }
+}
+
+.ex-12-button{
+    position: relative;
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: ese12 1.5s ease-in-out;
+}
+
+@keyframes ese12{
+    0%{
+        position: absolute;
+        left:10%;
+    }
+
+    50%{
+        position: absolute;
+        left:60%;
+    }
+
+    100%{
+        position: absolute;
+        left:10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: ese12-bt 1.5s ease-in-out;
+}
+
+@keyframes ese12-bt{
+    0%{
+        position: absolute;
+        left:49%;
+    }
+
+    50%{
+
+        position: absolute;
+        left:10%;
+    }
+
+    100%{
+        position: absolute;
+        left:49%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: ese13 6s ease-in-out;
+}
+
+@keyframes ese13{
+    0%{
+        position: absolute;
+        left:10%;
+    }
+
+    25%{
+        position: absolute;
+        left:60%;
+    }
+
+    50%{
+        left: 100%;
+        bottom:0%;
+    }
+
+
+    100%{
+        position: absolute;
+        left:10%;
+    } 
+}
